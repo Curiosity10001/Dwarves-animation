@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float _jumpForce = 1.5f;
     public int _maxJump = 3;
 
-    private Vector2 _xMove;
+    
     private bool _jump = false;
     private int _jumpNB = 0;
 
@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _xMove.x = Input.GetAxis("Horizontal")*_runVelocity;
+        float x = Input.GetAxis("Horizontal")*_runVelocity;
+        float y = Input.GetAxis("Vertical") * _jumpForce;
+        _rdbdDwarves.velocity= new Vector2(x,y);
+        
+        if () { };
     }
 }

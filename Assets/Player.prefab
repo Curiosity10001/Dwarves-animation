@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6719171849848595139}
   - component: {fileID: 6719171849848595149}
-  - component: {fileID: 6719171849848595138}
   m_Layer: 0
   m_Name: dwarf_body
   m_TagString: Untagged
@@ -85,27 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6719171849848595138
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719171849848595136}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6719171850007291231
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +152,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6719171850160112540}
   - component: {fileID: 6719171850160112542}
-  - component: {fileID: 6719171850160112543}
   m_Layer: 0
   m_Name: dwarf_head
   m_TagString: Untagged
@@ -249,27 +226,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6719171850160112543
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719171850160112541}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6719171850233457088
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +236,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6719171850233457091}
   - component: {fileID: 6719171850233457090}
-  - component: {fileID: 6719171850233457101}
   m_Layer: 0
   m_Name: dwarf_foot
   m_TagString: Untagged
@@ -355,27 +310,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6719171850233457101
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719171850233457088}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6719171850718188773
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +320,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6719171850718188772}
   - component: {fileID: 6719171850718188775}
-  - component: {fileID: 6719171850718188774}
   m_Layer: 0
   m_Name: dwarf_back_hand
   m_TagString: Untagged
@@ -461,27 +394,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6719171850718188774
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719171850718188773}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6719171851126129510
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +404,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6719171851126129505}
   - component: {fileID: 6719171851126129504}
-  - component: {fileID: 6719171851126129507}
   m_Layer: 0
   m_Name: 'dwarf back foot '
   m_TagString: Untagged
@@ -567,27 +478,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6719171851126129507
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719171851126129510}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6719171851188936365
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +488,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6719171851188936364}
   - component: {fileID: 6719171851188936367}
-  - component: {fileID: 6719171851188936366}
   m_Layer: 0
   m_Name: dwarf_front_hand
   m_TagString: Untagged
@@ -674,27 +563,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6719171851188936366
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719171851188936365}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6719171851368203015
 GameObject:
   m_ObjectHideFlags: 0
