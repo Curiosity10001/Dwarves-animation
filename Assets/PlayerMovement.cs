@@ -29,9 +29,9 @@ public class PlayerMovement : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal") ;
         float y = Input.GetAxisRaw("Vertical");
-        _rdbdDwarves.velocity = new Vector2(x * _runVelocity, y * _jumpForce);
+        _rdbdDwarves.velocity = new Vector2(x * _runVelocity, y );
 
-        if ((x == 0 && y == 0))
+        if (x == 0)
         {
             _animator.SetBool("isIdle", true);
         }
@@ -42,14 +42,16 @@ public class PlayerMovement : MonoBehaviour
         ;
         if (y > 0)
         {
+            _rdbdDwarves.AddForce(Vector2.up * _jumpForce);
             _animator.SetBool("isJumping", true);
         }
         else
         {
             _animator.SetBool("isJumping", false);
         };
-        if (y < 0)
+        if (y <= 0 && _animator.GetBool("isIdle")==false)
         {
+            µ
             _animator.SetBool("isFalling", true);
         }
         else
