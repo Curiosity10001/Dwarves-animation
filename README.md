@@ -1,2 +1,3 @@
 # Dwarves-animation
- First baby steps in Anumation <3
+ First baby steps in Animation <3
+ Module 4 3WA Unity formation
