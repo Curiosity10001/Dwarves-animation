@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float _runVelocity = 1.2f;
+    public float _runVelocity = 20f;
     public float _fallSpeed = 2f;
     public float _jumpForce = 1.5f;
     public int _maxJump = 2;
@@ -16,7 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D _rdbdDwarves;
     public Animator _animator;
 
-
+    private float _x;
+    private bool _y;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,49 +28,52 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxisRaw("Horizontal") ;
-        float y = Input.GetAxisRaw("Vertical");
-        _rdbdDwarves.velocity = new Vector2(x * _runVelocity, y );
+         _x = Input.GetAxisRaw("Horizontal") ;
+         _y = Input.GetButtonDown("Vertical");
+        
 
-        if (x == 0)
+     
+    }
+    private void FixedUpdate()
+    {
+        _rdbdDwarves.velocity = new Vector2(_x * _runVelocity, _rdbdDwarves.velocity.y);
+
+        if (_x == 0 )
         {
             _animator.SetBool("isIdle", true);
         }
-        else 
-        { 
-            _animator.SetBool("isIdle", false); 
+        else
+        {
+            _animator.SetBool("isIdle", false);
         }
         ;
-        if (y > 0)
+        if (_y == true)
         {
-            _rdbdDwarves.AddForce(Vector2.up * _jumpForce);
+            
+            _rdbdDwarves.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
             _animator.SetBool("isJumping", true);
         }
         else
         {
             _animator.SetBool("isJumping", false);
         };
-        if (y <= 0 && _animator.GetBool("isIdle")==false)
+        if (_animator.GetBool("isJumping") == false &&  _animator.GetBool("isIdle") == false && _animator.GetBool("isRunning") == false && _rdbdDwarves.velocity.y < 0 )
         {
-            µ
+
             _animator.SetBool("isFalling", true);
         }
         else
         {
             _animator.SetBool("isFalling", false);
         }
-        if (x < 0 || x > 0)
+        if (_x < 0 || _x > 0)
         {
             _animator.SetBool("isRunning", true);
         }
-        else 
+        else
         {
             _animator.SetBool("isRunning", false);
         }
-    }
-    private void FixedUpdate()
-    {
-        
     }
 }
    
